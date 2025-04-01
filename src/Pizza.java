@@ -6,7 +6,7 @@ import java.util.ArrayList;
 public abstract class Pizza {
     // All of the toppings on this pizza.
     // As a protected instance variable it can be only be accessed by subclasses.
-    protected ArrayList<Topping> toppings;
+    protected ArrayList<Topping> toppings = new ArrayList<>();
 
     // Takes a String containing toppings code characters and adds the corresponding toppings to the toppings ArrayList. 
     // Uses the Topping getTopping method to get the toppings correpsonding to the code letters.
