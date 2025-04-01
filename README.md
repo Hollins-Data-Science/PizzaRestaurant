@@ -15,3 +15,5 @@ The Main class will need some methods for reading the orders of pizzas. Be sure 
 You are welcome to name your restaurant whatever you like and customize the toppings as you wish. You are allowed to work on this project with a partner, but if you then you need to add some extra features to your restaurant. Examples of features might be a new type of pizza or the ability to find the average price of a pizza.  
 
 Be sure to review all of the code files and implement the described work.
+
+See the InventorySystem repository system as an example of similar project, albeit on a smaller scale.
