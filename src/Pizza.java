@@ -19,6 +19,15 @@ public abstract class Pizza {
         }
     }
 
+    // Returns the toppings code from the pizza's arraylist of toppings
+    String getToppingsCode() {
+        String code = "";
+        for (Topping topping : toppings) {
+            code += Character.toString(topping.code);
+        }
+        return code;
+    }
+
     // Toppings price is the sum of the prices of the toppings on the pizza.
     double toppingsPrice() {
         double total = 0.0;
