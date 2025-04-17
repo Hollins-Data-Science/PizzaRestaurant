@@ -21,15 +21,39 @@ Examples of features might be a new type of pizza or the ability to find the ave
 import java.util.Scanner;
 
 public class Main {
+  /* // Sample code for reading in a pizza
+  public static void readPizzaForOrder(Order currentOrder, Scanner stdin) {
+    while (true) {
+      System.out.printf("Enter the type of the pizza (traditional or deepdish) or q to quit:");
+      String type = stdin.next();
+      Pizza newPizza; // the new pizza, type tbd
+      if (type == "traditional") {
+        newPizza = new TraditionalPizza();
+      } else if (type == "deepdish") {
+        newPizza = new DeepDishPizza();
+      } else if (type == "q") {
+        return;
+      } else {
+        System.out.println("Invalid Type");
+      }
+      System.out.println("Enter the toppings:");
+      String code = stdin.next();
+      newPizza.addToppings(code);
+      currentOrder.addPizza(newPizza);
+    }
+  }
+  */
 
   public static void main(String[] args) {
     // Use a scanner to read in input.
-    // I recommend passing this scanner into your methods that take orders and take pizzas.
+    // I recommend passing this scanner into your methods that take orders and take
+    // pizzas.
     Scanner stdin = new Scanner(System.in);
 
     // Initial printing of the menu
     // Feel free to change this
-    // Also feel free to comment it out while you are developing as printing output can be slow
+    // Also feel free to comment it out while you are developing as printing output
+    // can be slow
     System.out.printf("\n%28s\n\n", "*** Pizzeria 217 ***");
     System.out.printf("%25s\n", "*** Menu ***");
     System.out.printf("%20s : %5.2f\n", "Traditional Pizza", 8.99);
